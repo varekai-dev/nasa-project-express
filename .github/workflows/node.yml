@@ -6,6 +6,13 @@ on:
   pull_request:
     branches:
       - main
+env:
+ COOKIE_KEY_1: ${{ secrets.COOKIE_KEY_1 }}      
+ COOKIE_KEY_2: ${{ secrets.COOKIE_KEY_2 }}      
+ MONGO_URL: ${{ secrets.MONGO_URL }}      
+ OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}      
+ OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}      
+ PORT: ${{ secrets.PORT }}      
 jobs:
   build:
     env: 
